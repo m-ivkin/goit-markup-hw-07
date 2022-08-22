@@ -1,28 +1,10 @@
 .nav {
   display: flex;
 }
-/* Logo */
-.nav__logo {
-  display: flex;
-  align-items: center;
-  margin-right: 93px;
-
-  color: var(--accent-color);
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-.logo__part--dark {
-  color: var(--logo-color);
-}
-
-/* Site nav */
 .nav__list {
   display: flex;
 }
-.nav__list .nav__item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 .nav__link {

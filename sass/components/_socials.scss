@@ -21,12 +21,14 @@
   color: var(--icon-primary-color);
 
   transition: color var(--anim-fast), background-color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
 }
-.social__items:hover,
-.social__items:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
+
 .social__items .social__icon {
   display: flex;
   fill: currentColor;
@@ -53,14 +55,16 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .networks__item:not(:nth-child(4n)) {
   margin-right: 10px;
 }
-.networks__item:hover,
-.networks__item:focus {
-  background-color: var(--accent-color);
-}
+
 .networks__icon {
   align-self: center;
   display: flex;

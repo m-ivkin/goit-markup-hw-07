@@ -23,12 +23,14 @@
   font-style: normal;
 
   transition: color var(--anim-fast);
-}
-.contacts__link:hover,
-.contacts__link:focus {
+
+  &:hover,
+&:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+}
+
 .contacts__icon {
   align-self: center;
   fill: currentColor;

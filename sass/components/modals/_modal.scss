@@ -36,11 +36,12 @@
   transform: translate(-50%, -50%) scale(1);
 
   animation: heartBeat 1000ms ease-in-out 200ms;
+
+  .backdrop--hidden & {
+    animation-play-state: paused;
+  }
 }
 
-.backdrop--hidden .backdrop__modal {
-  animation-play-state: paused;
-}
 .backdrop__btn {
   position: absolute;
   top: 0;
@@ -62,12 +63,14 @@
   cursor: pointer;
 
   transition: color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--logo-color);
+  }
 }
-.backdrop__btn:hover,
-.backdrop__btn:focus {
-  color: var(--primary-white-color);
-  background-color: var(--logo-color);
-}
+
 .backdrop__btn--closed {
   fill: currentColor;
   background-color: transparent;

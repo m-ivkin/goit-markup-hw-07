@@ -30,13 +30,13 @@
   transition: transform var(--anim-fast);
 }
 
-.portfolio__item:hover .portfolio-wrap,
-.portfolio__item:focus .portfolio-wrap {
-  transform: translateY(0);
-}
-
 .portfolio__item {
   width: calc((100% - 2 * 30px) / 3);
+
+  &:hover .portfolio-wrap,
+  &:focus .portfolio-wrap {
+    transform: translateY(0);
+  }
 }
 .portfolio__description {
   padding: 20px 24px;
@@ -71,9 +71,10 @@
 .portfolio__link {
   display: block;
   transition: box-shadow var(--anim-fast);
-}
-.portfolio__link:hover,
-.portfolio__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }

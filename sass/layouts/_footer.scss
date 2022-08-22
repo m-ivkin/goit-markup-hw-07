@@ -7,18 +7,7 @@
 .footer__container {
   display: flex;
 }
-.footer__logo {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-.logo__part--light {
-  color: var(--primary-white-color);
-}
+
 .address__hyperlink {
   color: var(--primary-white-color);
   text-decoration: none;
@@ -27,11 +16,13 @@
   font-style: normal;
   margin-bottom: 9px;
   transition: color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.address__hyperlink:hover,
-.address__hyperlink:focus {
-  color: var(--accent-color);
-}
+
 .address__link {
   color: var(--address-link);
   text-decoration: none;
@@ -39,11 +30,13 @@
   font-style: normal;
   margin-bottom: 9px;
   transition: color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.address__link:hover,
-.address__link:focus {
-  color: var(--accent-color);
-}
+
 .footer__title {
   font-weight: 700;
   font-size: 14px;
