@@ -1,25 +1,17 @@
 /* Features */
-.features-list {
+.features__list {
   display: flex;
   text-align: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.features-list .item {
+.features__list .features__item {
   width: 270px;
 }
-.features-list .item + .item {
+.features__list .features__item + .features__item {
   margin-left: 30px;
 }
-.features-title {
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-.features-paragraph {
+.features__paragraph {
   color: var(--paragraph-text-color);
   line-height: 1.71;
   margin-top: 0;
@@ -32,7 +24,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.icon-list {
+.features__desc {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -41,7 +33,7 @@
   background-color: var(--item-backgroung-color);
   background-size: 70px;
 }
-.icon-item {
+.features__icon {
   display: flex;
   align-self: center;
 }

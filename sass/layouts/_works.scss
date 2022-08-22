@@ -1,29 +1,23 @@
 /* Works */
-.works-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.container-works {
+
+.works__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-.works-list {
+.works__list {
   display: flex;
   flex-wrap: wrap;
 }
-.works-images {
+.works__item {
   width: calc((100% - 2 * 30px) / 3);
 }
-.works-images:not(:nth-child(3n)) {
+.works__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-.works-descriprion {
+.works__desc {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -42,11 +36,11 @@
   bottom: 0;
   right: 0;
 }
-.works-images {
+.works__item {
   position: relative;
   z-index: 1;
 }
-.works-paragraph {
+.works__paragraph {
   display: flex;
   align-self: center;
 }

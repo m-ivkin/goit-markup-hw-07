@@ -1,15 +1,14 @@
 /* Header contacts */
-.contacts-nav {
+.contacts {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
 }
-.contacts-nav .item + .item {
+.contacts .item + .item {
   margin-left: 30px;
 }
-
-.contacts-nav .contacts-link {
+.contacts__link {
   display: block;
   gap: 10px;
   padding-top: 32px;
@@ -25,18 +24,18 @@
 
   transition: color var(--anim-fast);
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-.primary-icon {
+.contacts__icon {
   align-self: center;
   fill: currentColor;
 
   transition: fill var(--anim-fast);
 }
-.contacts-nav .link {
+.contacts .link {
   display: flex;
   position: relative;
 }

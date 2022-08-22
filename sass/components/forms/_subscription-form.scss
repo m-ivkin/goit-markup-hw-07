@@ -1,15 +1,15 @@
 /* Form Footer */
-.join-container {
+.join-us__container {
   margin-left: 93px;
   margin-top: 12px;
 }
-.form-footer {
+.join-us__form {
   width: 570px;
   padding: 0;
   margin: 0;
   margin-top: 20px;
 }
-.button-sign {
+.join-us__btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -32,8 +32,8 @@
     box-shadow var(--anim-fast);
 }
 
-.button-sign:hover,
-.button-sign:focus {
+.join-us__btn:hover,
+.join-us__btn:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -41,7 +41,7 @@
   border-radius: 4px;
 }
 
-.join-container input {
+.join-us__container input {
   margin: 0;
   padding: 15px 16px;
   width: 358px;
@@ -49,22 +49,22 @@
   border-radius: 4px;
 }
 
-.join-container::placeholder input {
+.join-us__container::placeholder input {
   font-size: 16px;
   line-height: 1.25;
   vertical-align: center;
   letter-spacing: 0.03em;
   color: var(--footer-label-color);
 }
-.social-input {
+.join-us__input {
   background-color: var(--footer-backgroung-color);
   color: var(--primary-white-color);
 }
-.social-input:hover,
-.social-input:focus {
+.join-us__input:hover,
+.join-us__input:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
-.join-container::placeholder input:hover {
+.join-us__container::placeholder input:hover {
   color: var(--accent-color);
 }

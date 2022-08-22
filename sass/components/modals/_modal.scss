@@ -19,7 +19,7 @@
   visibility: hidden;
 }
 
-.modal {
+.backdrop__modal {
   position: absolute;
   min-width: 528px;
   min-height: 581px;
@@ -38,10 +38,10 @@
   animation: heartBeat 1000ms ease-in-out 200ms;
 }
 
-.backdrop--hidden .modal {
+.backdrop--hidden .backdrop__modal {
   animation-play-state: paused;
 }
-.backdrop-btn {
+.backdrop__btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -63,12 +63,12 @@
 
   transition: color var(--anim-fast);
 }
-.backdrop-btn:hover,
-.backdrop-btn:focus {
+.backdrop__btn:hover,
+.backdrop__btn:focus {
   color: var(--primary-white-color);
   background-color: var(--logo-color);
 }
-.icon-close {
+.backdrop__btn--closed {
   fill: currentColor;
   background-color: transparent;
 }

@@ -1,9 +1,9 @@
 /* Clients */
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
-.clients-item {
+.clients__item {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -17,13 +17,13 @@
 
   transition: border var(--anim-fast);
 }
-.clients-icon {
+.clients__icon {
   fill: currentColor;
   align-self: center;
   transition: color var(--anim-fast);
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients__item:hover,
+.clients__item:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }

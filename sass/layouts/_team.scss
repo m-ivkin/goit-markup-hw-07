@@ -2,7 +2,7 @@
 .team {
   background-color: var(--studio-background-color);
 }
-.team-title {
+.team__name {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -13,7 +13,7 @@
   line-height: 1.18;
   text-align: center;
 }
-.team-paragraph {
+.team__paragraph {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -31,11 +31,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-.team-index {
+.team__list {
   display: flex;
   flex-wrap: wrap;
 }
-.team-index .item {
+.team__list .team__item {
   width: calc((100% - 3 * 30px) / 4);
   display: inline-block;
 
@@ -44,10 +44,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-index .item:not(:nth-child(4n)) {
+.team__list .team__item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-.team-description {
+.team__desc {
   padding-top: 30px;
   padding-bottom: 30px;
 }

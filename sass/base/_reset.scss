@@ -36,7 +36,13 @@ textarea {
   margin: 0;
   list-style: none;
 }
-.section.no-padding {
+.section.no__padding {
   padding-top: 0;
+}
+.hidden {
+  visibility: hidden;
+  margin: 0;
+  font-size: 0;
+  margin-block: 0;
 }
 //Reset end

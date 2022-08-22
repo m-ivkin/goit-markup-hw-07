@@ -1,8 +1,4 @@
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section.title {
+.section.hero {
   background-color: var(--title-backroung-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -18,8 +14,8 @@
   background-position: center;
   background-size: cover;
 }
-/* Studio Hero */
-.title-header {
+
+.hero__title {
   box-sizing: border-box;
   display: block;
   margin-left: auto;
