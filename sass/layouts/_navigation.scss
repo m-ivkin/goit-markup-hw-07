@@ -39,25 +39,28 @@
   position: relative;
 
   transition: color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-color);
-}
+
 .nav__link--active {
   color: var(--accent-color);
-}
-.nav__link--active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
 
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
 
-  transition: color var(--anim-fast);
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+
+    transition: color var(--anim-fast);
+  }
 }

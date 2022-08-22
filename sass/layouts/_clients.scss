@@ -16,14 +16,15 @@
   cursor: pointer;
 
   transition: border var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 .clients__icon {
   fill: currentColor;
   align-self: center;
   transition: color var(--anim-fast);
-}
-.clients__item:hover,
-.clients__item:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
 }

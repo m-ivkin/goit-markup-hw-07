@@ -13,10 +13,12 @@
 }
 .works__item {
   width: calc((100% - 2 * 30px) / 3);
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
-.works__item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
+
 .works__desc {
   display: flex;
   justify-content: center;
